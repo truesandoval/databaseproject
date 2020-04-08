@@ -1,19 +1,23 @@
-CREATE TABLE IF NOT EXISTS Sailors (
+CREATE TABLE IF NOT EXISTS Songs (
   sid SERIAL8 PRIMARY KEY,
+  mid BIGINT NOT NULL,
   name TEXT,
-  age BIGINT,
-  experience BIGINT -- years of experience
+  artist TEXT,
+  url TEXT,
+  FOREIGN KEY (mid) REFERENCES Moods(mid)
 );
 
-CREATE TABLE IF NOT EXISTS Boats (
-  bid SERIAL8 PRIMARY KEY,
-  name TEXT,
-  color TEXT
+CREATE TABLE IF NOT EXISTS Moods (
+  mid SERIAL8 PRIMARY KEY,
+  mood TEXT,
 );
 
-CREATE TABLE IF NOT EXISTS Voyages (
-  sid BIGINT NOT NULL,
-  bid BIGINT NOT NULL,
-  date_of_voyage DATE NOT NULL,
-  PRIMARY KEY(sid, bid, date_of_voyage)
+CREATE TABLE IF NOT EXISTS Suggestions (
+  sugid SERIAL8 PRIMARY KEY,
+  username TEXT,
+  songname TEXT,
+  artist TEXT,
+  url TEXT,
+  moodname TEXT,
+  comment TEXT
 );
