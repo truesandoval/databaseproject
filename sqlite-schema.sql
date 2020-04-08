@@ -1,19 +1,23 @@
-CREATE TABLE IF NOT EXISTS Sailors (
+CREATE TABLE IF NOT EXISTS Songs (
   sid INTEGER PRIMARY KEY AUTOINCREMENT,
+  mid INTEGER NOT NULL,
   name TEXT,
-  age INTEGER,
-  experience INTEGER -- years of experience
+  artist TEXT,
+  url TEXT,
+  FOREIGN KEY (mid) REFERENCES Moods(mid)
 );
 
-CREATE TABLE IF NOT EXISTS Boats (
-  bid INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT,
-  color TEXT
+CREATE TABLE IF NOT EXISTS Moods (
+  mid INTEGER PRIMARY KEY AUTOINCREMENT,
+  mood TEXT,
 );
 
-CREATE TABLE IF NOT EXISTS Voyages (
-  sid INTEGER NOT NULL,
-  bid INTEGER NOT NULL,
-  date_of_voyage DATE NOT NULL,
-  PRIMARY KEY(sid, bid, date_of_voyage)
+CREATE TABLE IF NOT EXISTS Suggestions (
+  sugid INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT,
+  songname TEXT,
+  artist TEXT,
+  url TEXT,
+  moodname TEXT,
+  comment TEXT
 );
