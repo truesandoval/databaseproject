@@ -1,24 +1,21 @@
 
-INSERT INTO Sailors
-  (name, age, experience)
+INSERT INTO Moods
+  (mood)
 VALUES
-  ('john', 32, 5),
-  ('jane', 22, 3),
-  ('janie', 45, 17);
+  ('Love'),
+  ('Break-up'),
+  ('Popular'),
+  ('Work out'),
+  ('EDM'),
+  ('Carribean');
 
-INSERT INTO Boats
-  (name, color)
+INSERT INTO Songs
+  (mid, name, artist, url)
 VALUES
-  ('Water Bug', 'blue'),
-  ('Sundance', 'green'),
-  ('Moonrise', 'red');
+  (mid, 'name1', 'artist1', 'url1'),
+  (mid, 'name2', 'artist2', 'url2');
 
-INSERT INTO Voyages
-  (sid, bid, date_of_voyage)
+INSERT INTO Suggestions
+  (username, songname, artist, url, moodname, comment)
 VALUES
-  (1, 1, '2020-02-01'),
-  (1, 2, '2020-02-02'),
-  (1, 3, '2020-02-03'),
-  (2, 1, '2020-02-02'),
-  (2, 1, '2020-02-03'),
-  (3, 3, '2020-02-01');
+  ('username', 'songname', 'artist', 'url', 'moodname', 'comment');
