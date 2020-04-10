@@ -60,14 +60,14 @@ VALUES
   (5, ‘’High On Life, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=Lpjcm1F8tY8')
   (5, ‘Mistaken’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=9-klJ6EQfe8')
   (5, ‘Like I Do’, ‘Martin Garrix ft David Guetta’, ‘https://www.youtube.com/watch?v=WfPu9Jrcpuk')
-  (5, ‘’Yottabyte, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=WTrFa9H_lpk')
+  (5, ‘Yottabyte', ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=WTrFa9H_lpk')
   (5, ‘Years’, ‘Alesso ft Matthew Kona’, ‘https://www.youtube.com/watch?v=EGYaxYaxD_M')
-  (5, ‘’Turn It Around, ‘Dubvision’, ‘https://www.youtube.com/watch?v=rvZWsr4QCRc')
+  (5, ‘Turn It Around', ‘Dubvision’, ‘https://www.youtube.com/watch?v=rvZWsr4QCRc')
   (5, ‘Pressure - Alesso Radio Edit’, ‘Nadi Ali’, ‘https://www.youtube.com/watch?v=SU88c0f5-h0')
   (5, ‘Walk On Water’, ‘GATTÜSO’, ‘https://www.youtube.com/watch?v=U-R3zUSdIP0')
-  (5, ‘’Million Miles, ‘Mark Sixma’, ‘https://www.youtube.com/watch?v=fxSyswLTflg')
+  (5, ‘Million Miles', ‘Mark Sixma’, ‘https://www.youtube.com/watch?v=fxSyswLTflg')
   (5, ‘Lullaby - GATTÜSO Remix’, ‘R3HAB & Mike Williams’, ‘https://www.youtube.com/watch?v=qrwBbv0ivjs')
-  (6, ‘’Too Real, ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=74pYwmtzl24')
+  (6, ‘Too Real', ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=74pYwmtzl24')
   (6, ‘Wotless’, ‘Kes’, ‘https://www.youtube.com/watch?v=n0DvbOk8rs4')
   (6, ‘Soca Demon’, ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=bTU87Tdndvc')
   (6, ‘Bruk Off Yuh Back’, ‘Koshens’, ‘https://www.youtube.com/watch?v=N8CCuhSbgyE')
@@ -79,7 +79,7 @@ VALUES
   (6, ‘Turn Me On’, ‘Kevin Lyttle’, ‘https://www.youtube.com/watch?v=GP3Exc5tCtc)
   (6, ‘’Yuh Love, ‘Vybz Kartel’, ‘https://www.youtube.com/watch?v=-yqaFp981Yw')
   (6, ‘Overdue’, ‘Erphaan Alves’, ‘https://www.youtube.com/watch?v=3o4PjGj68RQ')
-  (6, ‘’A Little Wine, ‘Patrice Roberts’, ‘https://www.youtube.com/watch?v=y7v4UvvdgwE')
+  (6, ‘A Little Wine', ‘Patrice Roberts’, ‘https://www.youtube.com/watch?v=y7v4UvvdgwE')
   (6, ‘Ova Dweet’, ‘Popcaan’, ‘https://www.youtube.com/watch?v=r_FX6UANhLs');
 
 INSERT INTO Suggestions
