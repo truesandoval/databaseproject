@@ -2,15 +2,15 @@
 from flask import Blueprint
 
 from musicmoment.views import index
-from musicmoment.views import sailors
-from musicmoment.views import boats
-from musicmoment.views import voyages
+from musicmoment.views import suggestions
+from musicmoment.views import moods
+from musicmoment.views import songs
 
 blueprint = Blueprint('views', __name__)
 index.views(blueprint)
-sailors.views(blueprint)
-boats.views(blueprint)
-voyages.views(blueprint)
+moods.views(blueprint)
+suggestions.views(blueprint)
+songs.views(blueprint)
 
 def init_app(app):
     app.register_blueprint(blueprint)
