@@ -2,7 +2,7 @@
 INSERT INTO Moods
   (mood)
 VALUES
-  ('Love'),
+  ('Love'), -- the mid starts here from 0 and so on
   ('Break-up'),
   ('Popular'),
   ('Work out'),
