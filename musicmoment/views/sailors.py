@@ -5,9 +5,9 @@ from flask import escape
 from flask import render_template
 from flask import request, redirect
 
-from voyager.db import get_db, execute
-from voyager.validate import validate_field, render_errors
-from voyager.validate import NAME_RE, INT_RE, DATE_RE
+from musicmoment.db import get_db, execute
+from musicmoment.validate import validate_field, render_errors
+from musicmoment.validate import NAME_RE, INT_RE, DATE_RE
 
 def get_all_sailors(conn):
     return execute(conn, "SELECT s.sid, s.name, s.age, s.experience FROM Sailors AS s ")
@@ -40,7 +40,7 @@ def views(bp):
             boat_name = request.args.get('boat-name')
             rows = get_all_sailors_name_from_boat(conn, boat_name)
         return render_template("table.html", name="Sailors Who Sailed %s" %boat_name, rows=rows)
-    
+
     @bp.route("/sailors/who-sailed-on-date")
     def _get_all_sailors_name_from_date():
         with get_db() as conn:
@@ -68,6 +68,6 @@ def views(bp):
             try:
                 add_a_sailor(conn, name, age, experience)
             except Exception:
-                return render_template("form_error.html", errors = ["Your record was not added. Check your inputs."])            
+                return render_template("form_error.html", errors = ["Your record was not added. Check your inputs."])
             rows = get_all_sailors(conn)
         return render_template("table.html", name="Sailor Added", rows=rows)

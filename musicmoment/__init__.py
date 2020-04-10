@@ -2,7 +2,7 @@ import os
 
 from flask import Flask
 
-from voyager import db, views
+from musicmoment import db, views
 
 def create_app(test_config=None):
     # create and configure the app
@@ -32,4 +32,3 @@ def create_app(test_config=None):
         return 'Hello, World!'
 
     return app
-

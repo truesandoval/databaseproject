@@ -3,7 +3,7 @@ from collections import namedtuple
 from flask import render_template
 from flask import request
 
-from voyager.db import get_db, execute
+from musicmoment.db import get_db, execute
 import datetime
 
 def voyages(conn):
@@ -22,7 +22,7 @@ def views(bp):
         with get_db() as conn:
             rows = voyages(conn)
         return render_template("table.html", name="voyages", rows=rows)
-    
+
     @bp.route("/voyages/add")
     def add_voyage_page():
         return render_template("form_voyage.html")
@@ -36,6 +36,6 @@ def views(bp):
             try:
                 add_a_voyage(conn, sid, bid, date_of_voyage)
             except Exception:
-                return render_template("form_error.html", errors = ["Your record was not added. Check your inputs."])            
+                return render_template("form_error.html", errors = ["Your record was not added. Check your inputs."])
             rows = voyages(conn)
         return render_template("table.html", name="Voyage Added", rows=rows)

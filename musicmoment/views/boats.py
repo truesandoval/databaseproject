@@ -5,7 +5,7 @@ from flask import render_template
 from flask import request
 from flask import escape
 
-from voyager.db import get_db, execute
+from musicmoment.db import get_db, execute
 
 def boats(conn):
     return execute(conn, "SELECT b.bid, b.name, b.color FROM Boats AS b")

@@ -1,5 +1,5 @@
 
-from voyager.db import get_db
+from musicmoment.db import get_db
 
 def main():
     with get_db() as conn:
