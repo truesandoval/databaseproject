@@ -2,37 +2,16 @@
 INSERT INTO Moods
   (mood)
 VALUES
-  ('Love'), -- the mid starts here from 0 and so on
-  ('Break-up'),
+  ('Break-up'),  -- the mid starts here from 1 and so on
   ('Popular'),
   ('Work out'),
   ('EDM'),
-  ('Carribean');
+  ('Carribean'),
+  ('Love');
 
 INSERT INTO Songs
   (mid, name, artist, url)
 VALUES
-  (0,'My Heart Will Go On','Céline Dion','https://youtu.be/ea2kr3yTpFw'),
-  (0,'All of Me','John Legend','https://youtu.be/450p7goxZqg'),
-  (0,'Thinking Out Loud','Ed Sheeran','https://youtu.be/lp-EO5I60KA'),
-  (0,"Let's Stay Together",'Al Green','https://youtu.be/COiIC3A0ROM'),
-  (0,'I Will Always Love You','Whitney Houston','https://youtu.be/3JWTaaS7LdU'),
-  (0,'Love Story','Taylor Swift','https://youtu.be/8xg3vE8Ie_E'),
-  (0,"Cant Help Falling in Love",'Elvis Presley','https://youtu.be/vGJTaP6anOU'),
-  (0,'How Deep Is Your Love','Bee Gees','https://youtu.be/XpqqjU7u5Yc'),
-  (0,'A Thousand Years','Christina Perri','https://youtu.be/rtOvBOTyX00'),
-  (0,'Perfect','Ed Sheeran','https://youtu.be/2Vv-BfVoq4g'),
-  (0,'Love Me Like You Do','Ellie Goulding','https://youtu.be/eVVaqFDG6Fo'),
-  (0,'Drunk in Love','Beyoncé','https://youtu.be/p1JPKLa-Ofc'),
-  (0,"Say You Won't Let Go",'James Arthur','https://youtu.be/0yW7w8F2TVA'),
-  (0,'Call it what you want','Taylor Swift','https://youtu.be/V54CEElTF_U'),
-  (0,'Crazy In Love','Beyoncé' ,'https://youtu.be/ViwtNLUqkMY'),
-  (0,'Bleeding Love','Leona Lewis','https://youtu.be/Vzo-EL_62fQ'),
-  (0,'Right Here Waiting','Richard Marx' ,'https://youtu.be/S_E2EHVxNAE'),
-  (0,'Ek Villain','Ankit Tiwari','https://youtu.be/FxAG_11PzCk'),
-  (0,'Love Me Now','John Legend','https://youtu.be/NmCFY1oYDeM'),
-  (0,"Like I'm Gonna Lose You",'Meghan Trainor','https://youtu.be/2-MBfn8XjIU'),
-  (0,'Love Song','Sara Bareilles','https://youtu.be/qi7Yh16dA0w'),
   (1,'When I Was Your Man','Bruno Mars','https://youtu.be/ekzHIouo8Q4'),
   (1,'Someone Like You','Adele','https://youtu.be/hLQl3WQQoQ0'),
   (1,'Send My Love (To Your New Lover)','Adele','https://youtu.be/fk4BbF7B29w'),
@@ -122,7 +101,28 @@ VALUES
   (5, 'Yuh Love', 'Vybz Kartel', 'https://www.youtube.com/watch?v=-yqaFp981Yw'),
   (5, 'Overdue', 'Erphaan Alves', 'https://www.youtube.com/watch?v=3o4PjGj68RQ'),
   (5, 'A Little Wine', 'Patrice Roberts', 'https://www.youtube.com/watch?v=y7v4UvvdgwE'),
-  (5, 'Ova Dweet', 'Popcaan', 'https://www.youtube.com/watch?v=r_FX6UANhLs');
+  (5, 'Ova Dweet', 'Popcaan', 'https://www.youtube.com/watch?v=r_FX6UANhLs'),
+  (6,'My Heart Will Go On','Céline Dion','https://youtu.be/ea2kr3yTpFw'),
+  (6,'All of Me','John Legend','https://youtu.be/450p7goxZqg'),
+  (6,'Thinking Out Loud','Ed Sheeran','https://youtu.be/lp-EO5I60KA'),
+  (6,"Let's Stay Together",'Al Green','https://youtu.be/COiIC3A0ROM'),
+  (6,'I Will Always Love You','Whitney Houston','https://youtu.be/3JWTaaS7LdU'),
+  (6,'Love Story','Taylor Swift','https://youtu.be/8xg3vE8Ie_E'),
+  (6,"Cant Help Falling in Love",'Elvis Presley','https://youtu.be/vGJTaP6anOU'),
+  (6,'How Deep Is Your Love','Bee Gees','https://youtu.be/XpqqjU7u5Yc'),
+  (6,'A Thousand Years','Christina Perri','https://youtu.be/rtOvBOTyX00'),
+  (6,'Perfect','Ed Sheeran','https://youtu.be/2Vv-BfVoq4g'),
+  (6,'Love Me Like You Do','Ellie Goulding','https://youtu.be/eVVaqFDG6Fo'),
+  (6,'Drunk in Love','Beyoncé','https://youtu.be/p1JPKLa-Ofc'),
+  (6,"Say You Won't Let Go",'James Arthur','https://youtu.be/0yW7w8F2TVA'),
+  (6,'Call it what you want','Taylor Swift','https://youtu.be/V54CEElTF_U'),
+  (6,'Crazy In Love','Beyoncé' ,'https://youtu.be/ViwtNLUqkMY'),
+  (6,'Bleeding Love','Leona Lewis','https://youtu.be/Vzo-EL_62fQ'),
+  (6,'Right Here Waiting','Richard Marx' ,'https://youtu.be/S_E2EHVxNAE'),
+  (6,'Ek Villain','Ankit Tiwari','https://youtu.be/FxAG_11PzCk'),
+  (6,'Love Me Now','John Legend','https://youtu.be/NmCFY1oYDeM'),
+  (6,"Like I'm Gonna Lose You",'Meghan Trainor','https://youtu.be/2-MBfn8XjIU'),
+  (6,'Love Song','Sara Bareilles','https://youtu.be/qi7Yh16dA0w');
 
 INSERT INTO Suggestions
   (username, songname, artist, url, moodname, comment)
