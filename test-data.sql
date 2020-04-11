@@ -12,6 +12,48 @@ VALUES
 INSERT INTO Songs
   (mid, name, artist, url)
 VALUES
+  (0,'My Heart Will Go On','Céline Dion','https://youtu.be/ea2kr3yTpFw'),
+  (0,'All of Me','John Legend','https://youtu.be/450p7goxZqg'),
+  (0,'Thinking Out Loud','Ed Sheeran','https://youtu.be/lp-EO5I60KA'),
+  (0,"Let's Stay Together",'Al Green','https://youtu.be/COiIC3A0ROM'),
+  (0,'I Will Always Love You','Whitney Houston','https://youtu.be/3JWTaaS7LdU'),
+  (0,'Love Story','Taylor Swift','https://youtu.be/8xg3vE8Ie_E'),
+  (0,"Cant Help Falling in Love",'Elvis Presley','https://youtu.be/vGJTaP6anOU'),
+  (0,'How Deep Is Your Love','Bee Gees','https://youtu.be/XpqqjU7u5Yc'),
+  (0,'A Thousand Years','Christina Perri','https://youtu.be/rtOvBOTyX00'),
+  (0,'Perfect','Ed Sheeran','https://youtu.be/2Vv-BfVoq4g'),
+  (0,'Love Me Like You Do','Ellie Goulding','https://youtu.be/eVVaqFDG6Fo'),
+  (0,'Drunk in Love',Beyoncé','https://youtu.be/p1JPKLa-Ofc'),
+  (0,"Say You Won't Let Go",'James Arthur','https://youtu.be/0yW7w8F2TVA'),
+  (0,'Call it what you want','Taylor Swift','https://youtu.be/V54CEElTF_U'),
+  (0,'Crazy In Love','Beyoncé' ,'https://youtu.be/ViwtNLUqkMY'),
+  (0,'Bleeding Love','Leona Lewis','https://youtu.be/Vzo-EL_62fQ'),
+  (0,'Right Here Waiting','Richard Marx' ,'https://youtu.be/S_E2EHVxNAE'),
+  (0,'Ek Villain','Ankit Tiwari','https://youtu.be/FxAG_11PzCk'),
+  (0,'Love Me Now','John Legend','https://youtu.be/NmCFY1oYDeM'),
+  (0,"Like I'm Gonna Lose You",'Meghan Trainor','https://youtu.be/2-MBfn8XjIU'),
+  (0,'Love Song','Sara Bareilles','https://youtu.be/qi7Yh16dA0w'),
+  (1,'When I Was Your Man','Bruno Mars','https://youtu.be/ekzHIouo8Q4'),
+  (1,'Someone Like You','Adele','https://youtu.be/hLQl3WQQoQ0'),
+  (1,'Send My Love (To Your New Lover)','Adele','https://youtu.be/fk4BbF7B29w'),
+  (1,"I'm Not The Only One",'Sam Smith','https://youtu.be/nCkpzqqog4k'),
+  (1,"I hate you, I love you",'Gnash','https://youtu.be/BiQIc7fG9pA'),
+  (1,'Little Do You Know','Alex & Sierra' ,'https://youtu.be/4bzIpYiPUUo'),
+  (1,'Sorry','Halsey','https://youtu.be/tEnCoocmPQM'),
+  (1,'Cold/mess','Prateek Kuhad','https://youtu.be/Il7Nv270zNk'),
+  (1,"Thank u, next",'Ariana Grande','https://youtu.be/gl1aHhXnN1k'),
+  (1,'Wrecking Ball','Miley Cyrus','https://youtu.be/My2FRPA3Gf8'),
+  (1,'We Are Never Ever Getting Back Together','Taylor Swift','https://youtu.be/WA4iX5D9Z64'),
+  (1,"We Don't Talk Anymore",'Charlie Puth','https://youtu.be/3AtDnEC4zak'),
+  (1,'Rolling in the Deep','Adele','https://youtu.be/rYEDA3JcQqw'),
+  (1,'Say Something','A Great Big World','https://youtu.be/-2U0Ivkn2Ds'),
+  (1,'Too Good at Goodbyes','Sam Smith','https://youtu.be/J_ub7Etch2U'),
+  (1,'Stay','Rihanna','https://youtu.be/JF8BRvqGCNs'),
+  (1,'I Knew You Were Trouble','Taylor Swift','https://youtu.be/vNoKguSdy4Y'),
+  (1,'Before He Cheats','Carrie Underwood','https://youtu.be/WaSy8yy-mr8'),
+  (1,"I Can't Make You Love Me",'Bonnie Raitt','https://youtu.be/nW9Cu6GYqxo'),
+  (1,'Dancing on My Own','Calum Scott','https://youtu.be/q31tGyBJhRY'),
+  (1,'Heartless','Kanye West','https://youtu.be/Co0tTeuUVhU')
   (2, 'The Box', 'Roddy Rich', 'https://www.youtube.com/watch?v=uLHqpjW3aDs'),
   (2, 'Physical', 'Dua Lipa', 'https://www.youtube.com/watch?v=SRdlnO9gMIY'),
   (2, 'Say So', 'Doja Cat', 'https://www.youtube.com/watch?v=pok8H_KF1FA'),
@@ -53,33 +95,33 @@ VALUES
   (3, 'Ego', 'Jay Critch', 'https://www.youtube.com/watch?v=YmMruNsDb6E'),
   (3, 'Down Bad', 'Dreamville', 'https://www.youtube.com/watch?v=lIM1hejXzhw'),
   (3, 'Costa Rica', 'Dreamville', 'https://www.youtube.com/watch?v=Zn8ohtUY44g'),
-  (5, ‘When in Rome - Steve Brian Remix’, ‘GATTÜSO’, ‘https://www.youtube.com/watch?v=otwvEKZZreo')
-  (5, ‘L’Amour Toujours’, ‘Gigi D’Agostino’, ‘https://www.youtube.com/watch?v=w15oWDh02K4')
-  (5, ‘There For You’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=pNNMr5glICM')
-  (5, ‘Pizza’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=JsKIAO11q1Y')
-  (5, ‘’High On Life, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=Lpjcm1F8tY8')
-  (5, ‘Mistaken’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=9-klJ6EQfe8')
-  (5, ‘Like I Do’, ‘Martin Garrix ft David Guetta’, ‘https://www.youtube.com/watch?v=WfPu9Jrcpuk')
-  (5, ‘Yottabyte', ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=WTrFa9H_lpk')
-  (5, ‘Years’, ‘Alesso ft Matthew Kona’, ‘https://www.youtube.com/watch?v=EGYaxYaxD_M')
-  (5, ‘Turn It Around', ‘Dubvision’, ‘https://www.youtube.com/watch?v=rvZWsr4QCRc')
-  (5, ‘Pressure - Alesso Radio Edit’, ‘Nadi Ali’, ‘https://www.youtube.com/watch?v=SU88c0f5-h0')
-  (5, ‘Walk On Water’, ‘GATTÜSO’, ‘https://www.youtube.com/watch?v=U-R3zUSdIP0')
-  (5, ‘Million Miles', ‘Mark Sixma’, ‘https://www.youtube.com/watch?v=fxSyswLTflg')
-  (5, ‘Lullaby - GATTÜSO Remix’, ‘R3HAB & Mike Williams’, ‘https://www.youtube.com/watch?v=qrwBbv0ivjs')
-  (6, ‘Too Real', ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=74pYwmtzl24')
-  (6, ‘Wotless’, ‘Kes’, ‘https://www.youtube.com/watch?v=n0DvbOk8rs4')
-  (6, ‘Soca Demon’, ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=bTU87Tdndvc')
-  (6, ‘Bruk Off Yuh Back’, ‘Koshens’, ‘https://www.youtube.com/watch?v=N8CCuhSbgyE')
-  (6, ‘All On Me’, ‘Gyptian’, ‘https://www.youtube.com/watch?v=hYCFxl57qyU')
-  (6, ‘Wine Up On Me’, ‘Zoelah’, ‘https://www.youtube.com/watch?v=Z7hwJv9hjgY')
-  (6, ‘Wine For Me’, ‘Popcaan’, ‘https://www.youtube.com/watch?v=tDsfZVrs3j8')
-  (6, ‘Roll It Gal’, ‘Alison Hinds’, ‘https://www.youtube.com/watch?v=R7xKNbflCtc')
-  (6, ‘Fast Wine’, ‘Machel Montano’, ‘https://www.youtube.com/watch?v=p0JmdoSkfZ0')
-  (6, ‘Turn Me On’, ‘Kevin Lyttle’, ‘https://www.youtube.com/watch?v=GP3Exc5tCtc)
-  (6, ‘’Yuh Love, ‘Vybz Kartel’, ‘https://www.youtube.com/watch?v=-yqaFp981Yw')
-  (6, ‘Overdue’, ‘Erphaan Alves’, ‘https://www.youtube.com/watch?v=3o4PjGj68RQ')
-  (6, ‘A Little Wine', ‘Patrice Roberts’, ‘https://www.youtube.com/watch?v=y7v4UvvdgwE')
+  (5, ‘When in Rome - Steve Brian Remix’, ‘GATTÜSO’, ‘https://www.youtube.com/watch?v=otwvEKZZreo'),
+  (5, ‘L’Amour Toujours’, ‘Gigi D’Agostino’, ‘https://www.youtube.com/watch?v=w15oWDh02K4'),
+  (5, ‘There For You’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=pNNMr5glICM'),
+  (5, ‘Pizza’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=JsKIAO11q1Y'),
+  (5, ‘’High On Life, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=Lpjcm1F8tY8'),
+  (5, ‘Mistaken’, ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=9-klJ6EQfe8'),
+  (5, ‘Like I Do’, ‘Martin Garrix ft David Guetta’, ‘https://www.youtube.com/watch?v=WfPu9Jrcpuk'),
+  (5, ‘Yottabyte', ‘Martin Garrix’, ‘https://www.youtube.com/watch?v=WTrFa9H_lpk'),
+  (5, ‘Years’, ‘Alesso ft Matthew Kona’, ‘https://www.youtube.com/watch?v=EGYaxYaxD_M'),
+  (5, ‘Turn It Around', ‘Dubvision’, ‘https://www.youtube.com/watch?v=rvZWsr4QCRc'),
+  (5, ‘Pressure - Alesso Radio Edit’, ‘Nadi Ali’, ‘https://www.youtube.com/watch?v=SU88c0f5-h0'),
+  (5, ‘Walk On Water’, ‘GATTÜSO’, ‘https://www.youtube.com/watch?v=U-R3zUSdIP0'),
+  (5, ‘Million Miles', ‘Mark Sixma’, ‘https://www.youtube.com/watch?v=fxSyswLTflg'),
+  (5, ‘Lullaby - GATTÜSO Remix’, ‘R3HAB & Mike Williams’, ‘https://www.youtube.com/watch?v=qrwBbv0ivjs'),
+  (6, ‘Too Real', ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=74pYwmtzl24'),
+  (6, ‘Wotless’, ‘Kes’, ‘https://www.youtube.com/watch?v=n0DvbOk8rs4'),
+  (6, ‘Soca Demon’, ‘Kerwin Du Bois’, ‘https://www.youtube.com/watch?v=bTU87Tdndvc'),
+  (6, ‘Bruk Off Yuh Back’, ‘Koshens’, ‘https://www.youtube.com/watch?v=N8CCuhSbgyE'),
+  (6, ‘All On Me’, ‘Gyptian’, ‘https://www.youtube.com/watch?v=hYCFxl57qyU'),
+  (6, ‘Wine Up On Me’, ‘Zoelah’, ‘https://www.youtube.com/watch?v=Z7hwJv9hjgY'),
+  (6, ‘Wine For Me’, ‘Popcaan’, ‘https://www.youtube.com/watch?v=tDsfZVrs3j8'),
+  (6, ‘Roll It Gal’, ‘Alison Hinds’, ‘https://www.youtube.com/watch?v=R7xKNbflCtc'),
+  (6, ‘Fast Wine’, ‘Machel Montano’, ‘https://www.youtube.com/watch?v=p0JmdoSkfZ0'),
+  (6, ‘Turn Me On’, ‘Kevin Lyttle’, ‘https://www.youtube.com/watch?v=GP3Exc5tCtc),
+  (6, ‘’Yuh Love, ‘Vybz Kartel’, ‘https://www.youtube.com/watch?v=-yqaFp981Yw'),
+  (6, ‘Overdue’, ‘Erphaan Alves’, ‘https://www.youtube.com/watch?v=3o4PjGj68RQ'),
+  (6, ‘A Little Wine', ‘Patrice Roberts’, ‘https://www.youtube.com/watch?v=y7v4UvvdgwE'),
   (6, ‘Ova Dweet’, ‘Popcaan’, ‘https://www.youtube.com/watch?v=r_FX6UANhLs');
 
 INSERT INTO Suggestions
