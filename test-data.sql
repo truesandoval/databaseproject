@@ -23,7 +23,7 @@ VALUES
   (0,'A Thousand Years','Christina Perri','https://youtu.be/rtOvBOTyX00'),
   (0,'Perfect','Ed Sheeran','https://youtu.be/2Vv-BfVoq4g'),
   (0,'Love Me Like You Do','Ellie Goulding','https://youtu.be/eVVaqFDG6Fo'),
-  (0,'Drunk in Love',Beyoncé','https://youtu.be/p1JPKLa-Ofc'),
+  (0,'Drunk in Love','Beyoncé','https://youtu.be/p1JPKLa-Ofc'),
   (0,"Say You Won't Let Go",'James Arthur','https://youtu.be/0yW7w8F2TVA'),
   (0,'Call it what you want','Taylor Swift','https://youtu.be/V54CEElTF_U'),
   (0,'Crazy In Love','Beyoncé' ,'https://youtu.be/ViwtNLUqkMY'),
