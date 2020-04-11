@@ -13,7 +13,7 @@ def suggestions(conn):
 def add_a_sugg(conn, name, mood, song_name, artist, url, comment):
     if name == None or mood == None or song_name == None or artist == None or url == None or comment == None or name == "" or mood == "" or song_name == "" or artist == "" or url == "" or comment == "":
         raise Exception
-    return execute(conn, "INSERT INTO Suggestions(username,songname,artist,url,moodname, comment) VALUES (:name,:songname,:artist,:url,:moodname,:comment) ", {'name': name, 'songname': song_name, 'artist':artist, 'url':url, 'moodname':mood, 'comment':comment} )
+    return execute(conn, "INSERT INTO Suggestions(username,songname,artist,url,moodname,comment) VALUES (:username,:songname,:artist,:url,:moodname,:comment) ", {'username': name, 'songname': song_name, 'artist':artist, 'url':url, 'moodname':mood, 'comment':comment} )
 
 def add_a_voyage(conn, sid, bid, date_of_voyage):
     try:
@@ -38,17 +38,17 @@ def views(bp):
     def _add_a_sugg():
         with get_db() as conn:
             name = request.form['name']
-            mood = request.form['name']
+            mood = request.form['mood']
             song_name = request.form['song_name']
             artist = request.form['artist']
             url = request.form['url']
             comment = request.form['comment']
             try:
-                add_a_sugg(conn, name, color)
+                add_a_sugg(conn, name, mood, song_name, artist, url, comment)
             except Exception:
                 return render_template("form_error.html", errors=["Your record was not added. Check your inputs."])
-            rows = boats(conn)
-        return render_template("table.html", name="%s Boat Added" % name, rows=rows)
+            rows = suggestions(conn)
+        return render_template("table.html", name="%s Suggestion Added" % name, rows=rows)
 
     @bp.route("/voyages/add")
     def add_voyage_page():
