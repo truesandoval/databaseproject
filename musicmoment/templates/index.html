@@ -1,56 +1,57 @@
 <html>
-  <head>
-    <title>index of svb project</title>
-  </head>
-  <body>
-    <h1>Operations</h1>
-    <ol>
-      <li><a href="/suggestions/add">Add a Suggestion</a></li>
-    </ol>
-    <h1>Views</h1>
-    <ol>
-      <li><a href="/moods">Moods</a></li>
-      <li><a href="/songs">Songs</a></li>
-      <li><a href="/suggestions">Suggestions</a></li>
-      <li>
-        <form action="/sailors/who-sailed" method=GET>
-          <label>boat name</label>
-          <input name="boat-name"/>
-          <input type=submit value="sailors who sailed boat"/>
-        </form>
-      </li>
-      <li>
-        <!-- <h1>select a mood for your moment</h1>
-        <h2>Love | Break-up | Popular | Work out | Carribean | EDM</h2> -->
-        <form action="/moods/playlist" method=GET>
-          <label for="mood">Choose a Mood:</label>
-          <select id="mood">
-            <option value="love">Love</option>
-            <option value="breakup">Break-up</option>
-            <option value="popular">Popular</option>
-            <option value="workout">Workout</option>
-            <option value="caribbean">Caribbean</option>
-            <option value="edm">EDM</option>
-          </select>
-          <!-- <input name="mood"/> -->
-          <input type=submit value="get playlist"/>
-        </form>
-      </li>
-      <li>
-        <form action="/sailors/who-sailed-on-date" method=GET>
-          <label>date</label>
-          <input name="date"/>
-          <input type=submit value="sailors who sailed on date"/>
-        </form>
-      </li>
-      <li>
-        <form action="/sailors/who-sailed-on-boat-of-color" method=GET>
-          <label>color</label>
-          <input name="color"/>
-          <input type=submit value="sailors who sailed on boat of color"/>
-        </form>
-      </li>
-      <li><a href="/boats/by-popularity">boats by popularity</a></li>
-    </ol>
-  </body>
+
+<head>
+  <title>index of svb project</title>
+</head>
+
+<body>
+  <h1>Operations</h1>
+  <ol>
+    <li><a href="/suggestions/add">Add a Suggestion</a></li>
+  </ol>
+  <h1>Views</h1>
+  <ol>
+    <li><a href="/moods">Moods</a></li>
+    <li><a href="/songs">Songs</a></li>
+    <li><a href="/suggestions">Suggestions</a></li>
+    <li>
+      <form action="/sailors/who-sailed" method=GET>
+        <label>boat name</label>
+        <input name="boat-name" />
+        <input type=submit value="sailors who sailed boat" />
+      </form>
+    </li>
+    <li>
+      <form action="/moods/playlist" method=GET>
+        <label for="mood">Choose a Mood:</label>
+        <input type="text" list="mood" name="mood">
+        <datalist id="mood">
+          <option value="Love">
+          <option value="Break-up">
+          <option value="Popular">
+          <option value="Work out">
+          <option value="EDM">
+          <option value="Carribean">
+        </datalist>
+        <input type=submit value="get playlist" />
+      </form>
+    </li>
+    <li>
+      <form action="/sailors/who-sailed-on-date" method=GET>
+        <label>date</label>
+        <input name="date" />
+        <input type=submit value="sailors who sailed on date" />
+      </form>
+    </li>
+    <li>
+      <form action="/sailors/who-sailed-on-boat-of-color" method=GET>
+        <label>color</label>
+        <input name="color" />
+        <input type=submit value="sailors who sailed on boat of color" />
+      </form>
+    </li>
+    <li><a href="/boats/by-popularity">boats by popularity</a></li>
+  </ol>
+</body>
+
 </html>

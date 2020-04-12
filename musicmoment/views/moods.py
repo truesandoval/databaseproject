@@ -37,11 +37,11 @@ def views(bp):
             rows = get_all_moods(conn)
         return render_template("table.html", name="Moods", rows=rows)
 
-    @bp.route("/moods/playlist", methods = ['POST'])
+    @bp.route("/moods/playlist", methods=['GET', 'POST'])
     def _get_playlist():
         with get_db() as conn:
-            #mood = request.args.get('mood')
-            mood = request.form['mood']
+            mood = request.args.get('mood')
+            #mood = request.form.get('mood')
             rows = get_playlist(conn, mood)
         return render_template("table.html", name=mood, rows=rows)
     #
