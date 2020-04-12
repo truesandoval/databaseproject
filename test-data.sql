@@ -4,9 +4,9 @@ INSERT INTO Moods
 VALUES
   ('Break-up'),  -- the mid starts here from 1 and so on
   ('Popular'),
-  ('Work out'),
+  ('Work-out'),
   ('EDM'),
-  ('Carribean'),
+  ('Caribbean'),
   ('Love');
 
 INSERT INTO Songs
