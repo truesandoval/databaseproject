@@ -1,12 +1,52 @@
 <html>
-
 <head>
   <title>index of svb project</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 
 <body>
-  <h1>Operations</h1>
-  <ol>
+  <div class="header">
+    <div class="mmlogo" ><img style="display: inline;" src="{{ url_for('static', filename='mmlogo.png') }}"/>
+      <h1 style="display: inline;">Music Moment</h1>
+      <p>choosing the right music for you</p><br>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li class="logo"><img src="{{ url_for('static', filename='music.png') }}"></li>
+        <li class="text">Select a Mood:</li>
+          <form action="/moods/playlist" method=GET>
+            <label for="mood"></label>
+            <input type="text" list="mood" name="mood">
+            <datalist id="mood">
+              <option value="Love">
+              <option value="Break-up">
+              <option value="Popular">
+              <option value="Work-out">
+              <option value="EDM">
+              <option value="Carribean">
+            </datalist>
+            <input type=submit value="get playlist" />
+          </form>
+        </ul>
+        <div class="menu">
+          <ul>
+            <li class="logo"><img src="{{ url_for('static', filename='music.png') }}"></li>
+            <li><a href="/suggestions/add">Add a Suggestion</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li class="logo"><img src="{{ url_for('static', filename='music.png') }}"></li>
+          <li><a href="/moods">Moods</a></li>
+          <li><a href="/songs">Songs</a></li>
+          <li><a href="/suggestions">Suggestions</a></li>
+        </ul>
+
+    </div>
+
+  </div>
+  <!-- <h1>Operations</h1> -->
+  <!-- <ol>
     <li><a href="/suggestions/add">Add a Suggestion</a></li>
   </ol>
   <h1>Views</h1>
@@ -22,14 +62,14 @@
           <option value="Love">
           <option value="Break-up">
           <option value="Popular">
-          <option value="Work out">
+          <option value="Work-out">
           <option value="EDM">
           <option value="Carribean">
         </datalist>
         <input type=submit value="get playlist" />
       </form>
     </li>
-  </ol>
+
 </body>
 
 </html>
