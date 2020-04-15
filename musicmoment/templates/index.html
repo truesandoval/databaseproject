@@ -39,7 +39,7 @@
           <li class="logo"><img src="{{ url_for('static', filename='music.png') }}"></li>
           <li><a href="/moods">Moods</a></li>
           <li><a href="/songs">Songs</a></li>
-          <li><a href="/suggestions">Suggestions</a></li> 
+          <li><a href="/suggestions">Suggestions</a></li>
         </ul>
     </div>
 
@@ -53,13 +53,6 @@
     <li><a href="/moods">Moods</a></li>
     <li><a href="/songs">Songs</a></li>
     <li><a href="/suggestions">Suggestions</a></li>
-    <li>
-      <form action="/sailors/who-sailed" method=GET>
-        <label>boat name</label>
-        <input name="boat-name" />
-        <input type=submit value="sailors who sailed boat" />
-      </form>
-    </li>
     <li>
       <form action="/moods/playlist" method=GET>
         <label for="mood">Choose a Mood:</label>
@@ -75,22 +68,7 @@
         <input type=submit value="get playlist" />
       </form>
     </li>
-    <li>
-      <form action="/sailors/who-sailed-on-date" method=GET>
-        <label>date</label>
-        <input name="date" />
-        <input type=submit value="sailors who sailed on date" />
-      </form>
-    </li>
-    <li>
-      <form action="/sailors/who-sailed-on-boat-of-color" method=GET>
-        <label>color</label>
-        <input name="color" />
-        <input type=submit value="sailors who sailed on boat of color" />
-      </form>
-    </li>
-    <li><a href="/boats/by-popularity">boats by popularity</a></li>
-  </ol> -->
+
 </body>
 
 </html>
