@@ -1,25 +1,40 @@
 <html>
   <head>
     <title>{{ name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
-    <h1>{{ name }}</h1>
-    <table>
-      {% if rows %}
-      <tr>
-        {% for name in rows[0].keys() %}
-          <th>{{ name }}</th>
-        {% endfor %}
-      <tr>
-      {% endif %}
-      {% for row in rows %}
-      <tr>
-        {% for col in row.values() %}
-          <td>{{ col }}</td>
-        {% endfor %}
-      </tr>
-      {% endfor %}
-    </table>
-    <br><br><a href="/">Main Menu</a>
+    <div class="header">
+      <div class="mmlogo" ><img style="display: inline;" src="{{ url_for('static', filename='mmlogo.png') }}"/>
+        <h1 style="display: inline;">{{ name }}</h1><br><br>
+    </div>
+    <div class="container">
+      <div class="menu">
+        <ul>
+          <li>
+            <table>
+              {% if rows %}
+              <tr>
+                {% for name in rows[0].keys() %}
+                  <th>{{ name }}</th>
+                {% endfor %}
+              <tr>
+              {% endif %}
+              {% for row in rows %}
+              <tr>
+                {% for col in row.values() %}
+                  <td>{{ col }}</td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+            </table>
+          </li>
+        </ul><br>
+      <ul>
+        <li class="logo"><img src="{{ url_for('static', filename='music.png') }}"></li>
+        <li><a href="/">Main Menu</a></li>
+      </ul>
+    </div>
+    </div>
   </body>
 </html>

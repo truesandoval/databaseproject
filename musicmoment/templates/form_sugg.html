@@ -1,26 +1,40 @@
 <html>
   <head>
-    <title>
-      Addding a boat
-    </title>
+    <title>Adding a suggestion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
-    <h1>Add a suggestion!</h1>
-    <form action="/suggestions/add/submit" method=POST>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="mood">Suggested Mood:</label><br>
-        <input type="text" id="mood" name="mood"><br>
-        <label for="song_name">Suggested Song Name:</label><br>
-        <input type="text" id="song_name" name="song_name"><br>
-        <label for="artist">Suggested Artist:</label><br>
-        <input type="text" id="artist" name="artist"><br>
-        <label for="url">URL:</label><br>
-        <input type="text" id="url" name="url"><br>
-        <label for="comment">Comment:</label><br>
-        <input type="text" id="comment" name="comment"><br><br>
-        <input type=submit value="submit"/><br>
-    </form>
+    <div class="header">
+      <div class="mmlogo" ><img style="display: inline;" src="{{ url_for('static', filename='mmlogo.png') }}"/>
+        <h1 style="display: inline;">Suggestion</h1>
+        <p>What song did we miss?</p>
+        <div>
+          <div class="container">
+            <div class="menu">
+                  <form action="/suggestions/add/submit" method=POST>
+                    <ul>
+                      <li>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="mood">Suggested Mood:</label><br>
+                        <input type="text" id="mood" name="mood"><br>
+                        <label for="song_name">Suggested Song Name:</label><br>
+                        <input type="text" id="song_name" name="song_name"><br>
+                        <label for="artist">Suggested Artist:</label><br>
+                        <input type="text" id="artist" name="artist"><br>
+                        <label for="url">URL:</label><br>
+                        <input type="text" id="url" name="url"><br>
+                        <label for="comment">Comment:</label><br>
+                        <input type="text" id="comment" name="comment"><br><br>
+                        <input type=submit value="submit"/><br>
+                      </li>
+                    </ul>
+                </form>
+            </div>
+          </div>
+        </div>
+    <div/>
+    <div/>
   </body>
 </html>
 
