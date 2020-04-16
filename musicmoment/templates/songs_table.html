@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/songs.css') }}">
+  </head>
+  <body>
+    <div class="header">
+      <div class="mmlogo" ><img style="display: inline;" src="{{ url_for('static', filename='mmlogo.png') }}"/>
+        <h1 style="display: inline;">{{ name }}</h1><br><br>
+    </div>
+    <div class="container">
+      <div class="menu">
+        <ul>
+          <li>
+            <table>
+              {% if rows %}
+              <tr>
+                  <th>Sid </th>
+                  <th> </th>
+                  <th> Mid </th>
+                  <th> Name </th>
+                  <th>Artist</th>
+              <tr>
+              {% endif %}
+              {% for row in rows %}
+              <tr>
+                  <td>{{ row['sid'] }}</td>
+                  <td></td>
+                  <td>{{ row['mid'] }}</td>
+                  <td> <a href="{{ row['url'] }}">{{ row['name'] }}</a> </td>
+                  <td>{{ row['artist'] }}</td>
+                  
+              </tr>
+              {% endfor %}
+            </table>
+          </li>
+        </ul><br>
+      <ul>
+        <li class="logo"><img src="{{ url_for('static', filename='music.png') }}"></li>
+        <li><a href="/">Main Menu</a></li>
+      </ul>
+    </div>
+    </div>
+  </body>
+</html>
