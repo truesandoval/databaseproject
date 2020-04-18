@@ -124,11 +124,15 @@ VALUES
   (6,"Like I'm Gonna Lose You",'Meghan Trainor','https://youtu.be/2-MBfn8XjIU', 0),
   (6,'Love Song','Sara Bareilles','https://youtu.be/qi7Yh16dA0w', 0);
 
+-- INSERT INTO SongMood
+ -- (sid, mid)
+--VALUES
+--  (74,2),
+--  (74,6);
+
 INSERT INTO SongMood
-  (sid, mid)
-VALUES
-  (74,2),
-  (74,6);
+SELECT sid, mid
+FROM songs; 
 
 INSERT INTO Suggestions
   (username, songname, artist, url, moodname, comment)
