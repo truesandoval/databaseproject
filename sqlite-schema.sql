@@ -5,12 +5,10 @@ DROP TABLE IF EXISTS Suggestions;
 
 CREATE TABLE IF NOT EXISTS Songs (
   sid INTEGER PRIMARY KEY AUTOINCREMENT,
-  mid INTEGER NOT NULL,
   name TEXT,
   artist TEXT,
   url TEXT,
-  explicit INTEGER,
-  FOREIGN KEY (mid) REFERENCES Moods(mid)
+  explicit INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS Moods (
@@ -20,10 +18,8 @@ CREATE TABLE IF NOT EXISTS Moods (
 
 CREATE TABLE IF NOT EXISTS SongMood (
   sid INTEGER,
-  mid INTEGER,
+  mid INTEGER NOT NULL,
   PRIMARY KEY (sid, mid)
-  FOREIGN KEY (sid) REFERENCES Songs(sid)
-  FOREIGN KEY (mid) REFERENCES Moods(mid)
 );
 
 CREATE TABLE IF NOT EXISTS Suggestions (

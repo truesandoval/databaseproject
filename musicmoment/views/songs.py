@@ -9,7 +9,7 @@ from musicmoment.db import get_db, execute
 
 
 def songs(conn):
-    return execute(conn, "SELECT s.sid, s.mid, s.name, s.artist, s.url, s.explicit FROM Songs AS s")
+    return execute(conn, "SELECT s.sid, s.name, s.artist, s.url, s.explicit FROM Songs AS s")
     
 def songmood(conn):
     return execute(conn, "SELECT songmood.sid, moods.mood, songs.name, songs.url FROM Songs, Moods, SongMood WHERE songs.sid = songmood.sid and moods.mid = songmood.mid")

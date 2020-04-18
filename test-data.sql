@@ -128,7 +128,7 @@ INSERT INTO SongMood
   (sid, mid)
 VALUES
   (10, 2),
-  (10, 6)
+  (10, 6),
   (1, 1),
   (2, 1),
   (3, 1),
