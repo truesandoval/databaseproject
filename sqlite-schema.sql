@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS SongMood (
   sid INTEGER,
   mid INTEGER,
   PRIMARY KEY (sid, mid)
+  FOREIGN KEY (sid) REFERENCES Songs(sid)
+  FOREIGN KEY (mid) REFERENCES Moods(mid)
 );
 
 CREATE TABLE IF NOT EXISTS Suggestions (
