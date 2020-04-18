@@ -43,7 +43,7 @@ def views(bp):
             mood = request.args.get('mood')
             #mood = request.form.get('mood')
             rows = get_playlist(conn, mood)
-        return render_template("table.html", name=mood, rows=rows)
+        return render_template("filter_songs_table.html", name=mood, rows=rows)
     #
     # @bp.route("/sailors/who-sailed-on-date")
     # def _get_all_sailors_name_from_date():
