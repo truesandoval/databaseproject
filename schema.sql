@@ -13,6 +13,12 @@ CREATE TABLE IF NOT EXISTS Moods (
   mood TEXT,
 );
 
+CREATE TABLE IF NOT EXISTS SongMood (
+  sid INTEGER,
+  mid INTEGER,
+  PRIMARY KEY (sid, mid)
+);
+
 CREATE TABLE IF NOT EXISTS Suggestions (
   sugid SERIAL8 PRIMARY KEY,
   username TEXT,

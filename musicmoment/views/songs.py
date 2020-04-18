@@ -10,6 +10,9 @@ from musicmoment.db import get_db, execute
 
 def songs(conn):
     return execute(conn, "SELECT s.sid, s.mid, s.name, s.artist, s.url, s.explicit FROM Songs AS s")
+    
+def songmood(conn):
+    return execute(conn, "SELECT songmood.sid, moods.mood, songs.name FROM Songs, Moods, SongMood WHERE songs.sid = songmood.sid and moods.mid = songmood.mid")
 
 # def get_all_boats_from_sailor_name(conn, s_name):
 #     return execute(conn, "SELECT DISTINCT b.bid, b.name, b.color FROM ((Sailors AS s INNER JOIN Voyages As v ON s.sid = v.sid) INNER JOIN Boats AS b ON v.bid = b.bid) WHERE s.name = :s_name", {'s_name': s_name})
@@ -24,6 +27,12 @@ def views(bp):
         with get_db() as conn:
             rows = songs(conn)
         return render_template("songs_table.html", name="Songs", rows=rows)
+
+    @bp.route("/songmood")
+    def _songmood():
+        with get_db() as conn:
+            rows = songmood(conn)
+        return render_template("songmood_table.html", name="Songs & Moods", rows=rows)
 
     # @bp.route("/boats/sailed-by")
     # def _get_all_boats_from_sailor_name():

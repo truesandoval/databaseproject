@@ -128,6 +128,12 @@ VALUES
   (5, 'A Little Wine', 'Patrice Roberts', 'https://www.youtube.com/watch?v=y7v4UvvdgwE', 0),
   (5, 'Ova Dweet', 'Popcaan', 'https://www.youtube.com/watch?v=r_FX6UANhLs', 0);
 
+INSERT INTO SongMood
+  (sid, mid)
+VALUES
+  (74,2),
+  (74,6);
+
 INSERT INTO Suggestions
   (username, songname, artist, url, moodname, comment)
 VALUES
