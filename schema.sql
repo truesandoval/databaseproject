@@ -1,6 +1,5 @@
 CREATE TABLE IF NOT EXISTS Songs (
   sid SERIAL8 PRIMARY KEY,
-  mid BIGINT NOT NULL,
   name TEXT,
   artist TEXT,
   url TEXT,
