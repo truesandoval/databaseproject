@@ -13,7 +13,7 @@ def get_all_moods(conn):
     return execute(conn, "SELECT m.mid, m.mood FROM Moods AS m")
 
 def get_playlist(conn, mood):
-    return execute(conn, "SELECT s.name, s.artist, s.url FROM (Songs AS s INNER JOIN Moods as m ON s.mid = m.mid) WHERE m.mood = :mood", {'mood': mood})
+    return execute(conn, "SELECT s.name, s.artist, s.url FROM Songs AS s, SongMood AS sm, Moods AS m WHERE s.sid = sm.sid and sm.mid = m.mid and m.mood = :mood", {'mood': mood})
 
 # def get_all_sailors_name_from_boat(conn, b_name):
 #     return execute(conn, "SELECT DISTINCT s.sid, s.name, s.age, s.experience FROM ((Boats AS b INNER JOIN Voyages As v ON b.bid = v.bid) INNER JOIN Sailors AS s ON v.sid = s.sid) WHERE b.name = :b_name", {'b_name': b_name} )
