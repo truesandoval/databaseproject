@@ -16,8 +16,6 @@
               {% if rows %}
               <tr>
                   <th>Sid </th>
-                  <th> </th>
-                  <th> Mid </th>
                   <th> Name </th>
                   <th>Artist</th>
                   <th>Explicit</th>
@@ -26,8 +24,6 @@
               {% for row in rows %}
               <tr>
                   <td>{{ row['sid'] }}</td>
-                  <td></td>
-                  <td>{{ row['mid'] }}</td>
                   <td> <a href="{{ row['url'] }}">{{ row['name'] }}</a> </td>
                   <td>{{ row['artist'] }}</td>
                   <td>{{ row['explicit'] }}</td>
