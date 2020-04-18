@@ -10,6 +10,9 @@ from musicmoment.db import get_db, execute
 
 def songs(conn):
     return execute(conn, "SELECT s.sid, s.mid, s.name, s.artist, s.url, s.explicit FROM Songs AS s")
+
+def exsongs(conn):
+    return execute(conn, "SELECT s.sid, s.mid, s.name, s.artist, s.url FROM Songs AS s WHERE songs.explicit = 1")
     
 def songmood(conn):
     return execute(conn, "SELECT songmood.sid, moods.mood, songs.name FROM Songs, Moods, SongMood WHERE songs.sid = songmood.sid and moods.mid = songmood.mid")
@@ -27,6 +30,14 @@ def views(bp):
         with get_db() as conn:
             rows = songs(conn)
         return render_template("songs_table.html", name="Songs", rows=rows)
+
+    @bp.route("/exsongs", methods=['GET', 'POST'])
+    def _exsongs():
+        with get_db() as conn:
+            toggle = request.args.get('toggle')
+            rows = songs(conn)
+            return render_template("songs_table.html", name="Songs", rows=rows)
+
 
     @bp.route("/songmood")
     def _songmood():
