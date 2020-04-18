@@ -10,17 +10,11 @@ import datetime
 def suggestions(conn):
     return execute(conn, "SELECT * FROM Suggestions")
 
+
 def add_a_sugg(conn, name, mood, song_name, artist, url, comment):
     if name == None or mood == None or song_name == None or artist == None or url == None or comment == None or name == "" or mood == "" or song_name == "" or artist == "" or url == "" or comment == "":
         raise Exception
-    return execute(conn, "INSERT INTO Suggestions(username,songname,artist,url,moodname,comment) VALUES (:username,:songname,:artist,:url,:moodname,:comment) ", {'username': name, 'songname': song_name, 'artist':artist, 'url':url, 'moodname':mood, 'comment':comment} )
-
-# def add_a_voyage(conn, sid, bid, date_of_voyage):
-#     try:
-#         datetime.datetime.strptime(date_of_voyage, '%Y-%m-%d')
-#     except ValueError:
-#         raise Exception
-#     return execute(conn, "INSERT INTO Voyages(sid, bid, date_of_voyage) VALUES (:sid,:bid,:date_of_voyage)", {'sid': sid, 'bid': bid, 'date_of_voyage': date_of_voyage})
+    return execute(conn, "INSERT INTO Suggestions(username,songname,artist,url,moodname,comment) VALUES (:username,:songname,:artist,:url,:moodname,:comment) ", {'username': name, 'songname': song_name, 'artist': artist, 'url': url, 'moodname': mood, 'comment': comment})
 
 
 def views(bp):
@@ -49,20 +43,3 @@ def views(bp):
                 return render_template("form_error.html", errors=["Your record was not added. Check your inputs."])
             rows = suggestions(conn)
         return render_template("table.html", name="%s Suggestion Added" % name, rows=rows)
-
-    # @bp.route("/voyages/add")
-    # def add_voyage_page():
-    #     return render_template("form_voyage.html")
-
-    # @bp.route("/voyages/add/submit", methods=['POST'])
-    # def _add_a_voyage():
-    #     with get_db() as conn:
-    #         sid = request.form['sid']
-    #         bid = request.form['bid']
-    #         date_of_voyage = request.form['date_of_voyage']
-    #         try:
-    #             add_a_voyage(conn, sid, bid, date_of_voyage)
-    #         except Exception:
-    #             return render_template("form_error.html", errors=["Your record was not added. Check your inputs."])
-    #         rows = voyages(conn)
-    #     return render_template("table.html", name="Voyage Added", rows=rows)
