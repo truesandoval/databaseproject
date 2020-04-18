@@ -244,4 +244,8 @@ VALUES
 INSERT INTO Suggestions
   (username, songname, artist, url, moodname, comment)
 VALUES
-  ('username', 'songname', 'artist', 'url', 'moodname', 'comment');
+  ('Tan', 'Ambition', 'Wale', 'https://youtu.be/O7ZbM7ak8uw', 'Ambitious', 'Motivating song to be ambitious'),
+  ('Anonymous', "Don't Hold Your Applause", 'Wale', 'https://youtu.be/VywRGoredPY', 'Ambitious', 'Motivating song to be ambitious'),
+  ('Mike', 'Bury My Heart', 'Peter Gundry', 'https://youtu.be/QKgB9NWBjxY', 'Nostalgic', 'Missing her'),
+  ('Anonymous', 'When We Were Young', 'Adele', 'https://youtu.be/DDWKuo3gXMQ', 'Sad', 'Feeling sad'),
+  ('Pete', "when the party's over" , 'Billie Eilish', 'https://youtu.be/pbMwTqkKSps', 'Depressed', 'Sad!!!!');
