@@ -20,6 +20,7 @@
                   <th> Mid </th>
                   <th> Name </th>
                   <th>Artist</th>
+                  <th>Explicit</th>
               <tr>
               {% endif %}
               {% for row in rows %}
@@ -29,7 +30,7 @@
                   <td>{{ row['mid'] }}</td>
                   <td> <a href="{{ row['url'] }}">{{ row['name'] }}</a> </td>
                   <td>{{ row['artist'] }}</td>
-                  
+                  <td>{{ row['explicit'] }}</td>
               </tr>
               {% endfor %}
             </table>

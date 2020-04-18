@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS Songs (
   name TEXT,
   artist TEXT,
   url TEXT,
+  explicit INTEGER,
   FOREIGN KEY (mid) REFERENCES Moods(mid)
 );
 

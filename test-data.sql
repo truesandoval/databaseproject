@@ -12,7 +12,7 @@ VALUES
 INSERT INTO Songs
   (mid, name, artist, url)
 VALUES
-  (1,'When I Was Your Man','Bruno Mars','https://youtu.be/ekzHIouo8Q4'),
+  -- (1,'When I Was Your Man','Bruno Mars','https://youtu.be/ekzHIouo8Q4'),
   (1,'Someone Like You','Adele','https://youtu.be/hLQl3WQQoQ0'),
   (1,'Send My Love (To Your New Lover)','Adele','https://youtu.be/fk4BbF7B29w'),
   (1,"I'm Not The Only One",'Sam Smith','https://youtu.be/nCkpzqqog4k'),
@@ -123,6 +123,11 @@ VALUES
   (6,'Love Me Now','John Legend','https://youtu.be/NmCFY1oYDeM'),
   (6,"Like I'm Gonna Lose You",'Meghan Trainor','https://youtu.be/2-MBfn8XjIU'),
   (6,'Love Song','Sara Bareilles','https://youtu.be/qi7Yh16dA0w');
+
+INSERT INTO Songs
+  (mid, name, artist, url, explicit)
+VALUES
+  (1,'When I Was Your Man','Bruno Mars','https://youtu.be/ekzHIouo8Q4', 0);
 
 INSERT INTO Suggestions
   (username, songname, artist, url, moodname, comment)
