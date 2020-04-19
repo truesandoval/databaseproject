@@ -3,45 +3,77 @@
     <title>{{ name }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/songs.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/toggle.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
+    <script>
+      $(document).ready(function(){
+        $("input").change(function() {
+          if ($(this).is(":checked")){
+            $("#clean").show();
+            $("#explicit").hide();
+            return;
+          }
+          $("#explicit").show();
+          return;
+        });
+      });
+      </script>
     <div class="header">
       <div class="mmlogo" ><img style="display: inline;" src="{{ url_for('static', filename='mmlogo.png') }}"/>
-        <h1 style="display: inline;">{{ name }}</h1><br><br>
+        <h1 style="display: inline;">{{ name }}</h1><br><br><hr><p>filter</p>
     </div>
-    <form action="/exsongs" method="GET">
       <label class="switch">
         <input type="checkbox" id="toggle" name="toggle">
         <div class="slider round">
-          <span class="on">Clean</span>
-          <span class="off">Explicit</span>
+          <span class="on">CENSORED</span>
+          <span class="off">ALL</span>
         </div>
       </label><br><br>
-    </form>
     <div class="container">
       <div class="menu">
         <ul>
-          <li>
+          <li id="clean">
             <table>
               {% if rows %}
               <tr>
                   <th>Sid </th>
                   <th> Name </th>
                   <th>Artist</th>
-                  <th>Explicit</th>
+                  <!-- <th>Explicit</th> -->
+              <tr>
+              {% endif %}
+              {% for row in rows %}
+                {% if row['explicit'] == 0 %}
+            <tr>
+                <td>{{ row['sid'] }}</td>
+                <td> <a href="{{ row['url'] }}">{{ row['name'] }}</a> </td>
+                <td>{{ row['artist'] }}</td>
+                <!-- <td>{{ row['explicit'] }}</td> -->
+                {% endif %}
+            </tr>
+              {% endfor %}
+            </table>
+          </li>
+          <li id="explicit">
+            <table>
+              {% if rows %}
+              <tr>
+                  <th>Sid </th>
+                  <th> Name </th>
+                  <th>Artist</th>
+                  <!-- <th>Explicit</th> -->
               <tr>
               {% endif %}
               {% for row in rows %}
                 {% if row['explicit'] == 1 %}
-              <tr>
-                  <td>{{ row['sid'] }}</td>
-                  <td> <a href="{{ row['url'] }}">{{ row['name'] }}</a> </td>
-                  <td>{{ row['artist'] }}</td>
-                  <td>{{ row['explicit'] }}</td>
-                  {% endif %}
-              </tr>
-                {% else %}
-                <div>no songs</div>
+            <tr>
+                <td>{{ row['sid'] }}</td>
+                <td> <a href="{{ row['url'] }}">{{ row['name'] }}</a> </td>
+                <td>{{ row['artist'] }}</td>
+                <!-- <td>{{ row['explicit'] }}</td> -->
+                {% endif %}
+            </tr>
               {% endfor %}
             </table>
           </li>
