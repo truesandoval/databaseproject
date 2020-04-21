@@ -21,7 +21,7 @@
       </script>
     <div class="header">
       <div class="mmlogo" ><img style="display: inline;" src="{{ url_for('static', filename='mmlogo.png') }}"/>
-        <h1 style="display: inline;">{{ name }}</h1><br><br><hr><p>filter</p>
+        <h1 style="display: inline;">{{ name }}</h1><br><br><hr><p>Explicit Song Filter</p>
     </div>
       <label class="switch">
         <input type="checkbox" id="toggle" name="toggle">
@@ -37,7 +37,7 @@
             <table>
               {% if rows %}
               <tr>
-                  <th>Sid </th>
+                  <th> Serial </th>
                   <th> Name </th>
                   <th>Artist</th>
                   <!-- <th>Explicit</th> -->
@@ -59,7 +59,7 @@
             <table>
               {% if rows %}
               <tr>
-                  <th>Sid </th>
+                  <th>Serial </th>
                   <th> Name </th>
                   <th>Artist</th>
                   <!-- <th>Explicit</th> -->
