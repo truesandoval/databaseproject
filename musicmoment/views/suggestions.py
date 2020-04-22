@@ -22,7 +22,7 @@ def views(bp):
     def _suggestions():
         with get_db() as conn:
             rows = suggestions(conn)
-        return render_template("table.html", name="suggestions", rows=rows)
+        return render_template("table.html", name="Suggestions", rows=rows)
 
     @bp.route("/suggestions/add")
     def add_sugg_page():
